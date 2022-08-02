@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">  
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Gig</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css"/>
+  </head>
+  <body>
+
+    <!-- Our Header & Nav bar :~) --->
+    <header class="topnav" id="myTopnav">
+      <a href="index.html" class="Navimg"><img src="img/gigLogoMediumWhite.svg" alt="Gig Logo"></a>
+        <input type="text" placeholder="Search.." name="search">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
+        <a href="index.html" class="active nav-text nav-home"> Home </a>
+        <a href="find_a_gig.html" class="nav-text"> Find a Gig </a>
+        <a href="profile.html" class="nav-text"> Profile </a>
+        <a href="faq.html" class="nav-text"> FAQ </a>
+        <a href="dashboard.html" id="nav-dashboard" class="nav-text"> Dashboard </a> 
+    </header>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- Weekly Goal Heading and Message Notifications-->
+    <section class="grid-x grid-padding-x weekly-goal">
+      <div class="cell large-8 medium-8 small-8 ">
+        <h1>Weekly Goal</h1>
+      </div>
+      <!-- Messages --->
+      <div class="cell large-4 medium-4 small-4 ">
+        <div class="dash-messages"> 
+          <img src="img/messageIcon.svg" alt="Messages Icon">
+        </div> 
+      </div>
+    </section>
+    
+    <!-- Dashboard Work Area -->
+    <section class="grid-x grid-padding-x">
+
+      <!-- SMART Goals Section --->
+      <section class="cell large-7 medium-12 small-12 dash-goals">
+          <p>I want to work with 1 conference planner this week.</p>
+      </section>
+
+      <!-- Current Projects & Reminders in right-side column --->
+      <section class="cell large-5 medium-12 small-12">
+              
+
+        <!-- To-Do List --->
+        <!---Code Referenced is https://www.w3schools.com/howto/howto_js_todolist.asp-->
+        <div class="dash-todos">
+            <div class="dash-projects-header">
+              <h1>To Do List</h1>
+            </div>
+            
+            <div>
+                <ul id="myUL">
+                    <li>Submit RFP</li>
+                    <li>Call Plumber Back</li>
+                    <li>Pick up soil</li>
+                </ul>
+            </div>
+        </div>
+
+          <!-- Current Projects --->
+         
+          <div class="dash-projects">
+            <div class="dash-projects-header">
+              <h1>In Progress</h1>
+            </div>
+            <div class="dash-projects-info">
+              <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+              <h2>Flowers for Sarah S.</h2>
+            </div>
+            <div class="dash-projects-edit">
+              <img src="img/edit-icon.svg" alt="Edit Icon">
+            </div>
+          </div>
+
+      </section>
+    </section>
+
+    <!-- Reminders --->
+    <div class="dash-reminders">
+      <h1>Psst...</h1>
+      <div class="dash-reminders-text">
+        <p>Tax season is coming up! Have you organized your receipts?</p>
+      </div>
+    </div>
+
+
+    <!-- Recommended Gigs --->
+    <div class="recommended-gigs grid-x grid-padding-x">
+      <div class="cell large-10 medium-10 small-8">
+        <h1 class="recommended-gigs-header">Gigs you might be interested in</h1>
+      </div>
+      <div class="cell large-2 medium-2 small-4">
+        <a href="#"> See More </a>
+      </div>
+    </div>
+        
+
+    <!-- Gig Cards Horizontal Scroll --->
+  
+    <div class="horizontal-scroll">          
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+    <article class="grid-container gig-card">
+      <header class="gig-card-header">
+        <h1 class="gig-card-title">Need flowers for a photoshoot</h1>
+        </header>
+      <div class="gig-card-info">
+        <div class="grid-x gig-card-tag-box">
+            <div class="cell large-9 medium-9 small-9">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+            <div class="cell large-3 medium-3 small-3 gig-card-price">
+            <img src="img/dollarSign.svg" alt="Dollar Sign">
+            <p>400</p>
+            </div> 
+        </div>
+        <div class="cell large-12 medium-12 small-12 gig-card-body">
+        <p>
+            Looking for a local florist to supply flowers for an editorial  photoshoot. 
+            Think Cassie from Euphoria Vibes. Including delivery and set up. I have a budget of...
+            <a href="#">Read More</a>
+        </p>
+        </div>
+      </div>
+      <footer class="grid-x gig-card-footer">
+        <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+            <h1>Shared Interests</h1> 
+            <button href="#" class="btn gig-card-tag"> Photography </button>
+            <button href="#" class="btn gig-card-tag"> Plants </button>
+        </div>
+        <div class="cell large-3 medium-3 small-3 gig-card-img">
+            <img src="img/hana.svg" alt="Profile Image">
+        </div>
+      </footer>
+    </article>
+  </div>
+  
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="grid-container">
+    <div class="grid-x">
+    <div class="cell small-6 medium-6 large-6">
+  
+      <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="linkhere.html">Contact Us</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

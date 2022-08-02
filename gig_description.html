@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gig Description</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+  </head>
+
+  <body>
+
+    <!-- Our Header & Nav bar :~) --->
+    <header class="topnav" id="myTopnav">
+      <a href="index.html" class="Navimg"><img src="img/gigLogoMediumWhite.svg" alt="Gig Logo"></a>
+        <input type="text" placeholder="Search.." name="search">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
+        <a href="index.html" class="active nav-text nav-home"> Home </a>
+        <a href="find_a_gig.html" class="nav-text"> Find a Gig </a>
+        <a href="profile.html" class="nav-text"> Profile </a>
+        <a href="faq.html" class="nav-text"> FAQ </a>
+        <a href="dashboard.html" id="nav-dashboard" class="nav-text"> Dashboard </a> 
+    </header>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    
+    <!--Hero Image, Profile and Location-->  
+    <div class="hero-image">
+        <div class="grid-container posting-container-width">
+            <div class="grid-x grid-padding-x profile-container">
+                <div class="cell large-5 medium-5 small-9 profile-info">
+                    <img id="profile-image" src="img/cook.png" alt="Profile Image"/></a>
+                    <h1>Michelle Joe</h1>
+                </div>
+                <div class="cell large-7 medium-7 small-3 location-text">
+                    <p>2 km away</p>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+   
+    
+    <!--Posting Info-->
+    <section class="grid-container posting-container posting-container-width">
+    
+     <div class="grid-x grid-padding-x">
+    
+     <!-- Looking for/In Common Column Large Medium --->
+      <div class="cell large-5 medium-5 small-12 posting-lm">
+        <div class="tag-cloud-section looking-for">
+          <h1>Looking for</h1>
+          <div class="callout-tags modal-item">
+            <p>Designing</p>
+            <p>Web Designing</p>
+            <p>Designer</p>
+            <p>Branding</p>
+            <p>Graphic Design</p>
+          </div>
+        </div>
+        <div class="tag-cloud-section in-common">
+            <h1>In Common</h1>
+            <button href="#" class="btn incommon-tag"> Cars </button>
+            <button href="#" class="btn incommon-tag"> Vintage Cars </button>
+        </div>
+    </div>
+    
+    <!-- Gig Posting Description Right Column Large Medium--->
+    <div class="text-container cell large-7 medium-7 small-12 posting-lm">
+      <h1>
+        Need new website & menu for food truck.
+      </h1>
+  
+      <div class="text-container-body-text">
+        <p>
+          Just opened a new food truck and need deisgn work for a website and menu. 
+          Maybe some branding? Pressed for time since I also work full time. 
+          Looking for someone who can take direction well & make something exciting. 
+        </p>
+      </div>
+      <div class="buttonDiv">
+        <button class="ctabutton">
+          MESSAGE
+        </button>
+        <button class="ctabutton">
+            VIEW PROFILE
+          </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gig Posting Description Top Column Small--->
+  <div class="text-container cell large-7 medium-7 small-12 posting-s">
+    <h1>
+      Need new website & menu for food truck.
+    </h1>
+
+    <div class="text-container-body-text">
+      <p>
+        Just opened a new food truck and need deisgn work for a website and menu. 
+        Maybe some branding? Pressed for time since I also work full time. 
+        Looking for someone who can take direction well & make something exciting. 
+      </p>
+    </div>    
+  </div>
+</div>
+
+<!-- Looking for/In Common Column Small --->
+<div class="cell large-5 medium-5 small-12 posting-s">
+  <div class="tag-cloud-section looking-for">
+    <h1>Looking for</h1>
+    <div class="callout-tags modal-item">
+      <p>Designing</p>
+      <p>Web Designing</p>
+      <p>Designer</p>
+      <p>Branding</p>
+      <p>Graphic Design</p>
+    </div>
+  </div>
+  <div class="tag-cloud-section in-common">
+      <h1>In Common</h1>
+      <button href="#" class="btn incommon-tag"> Cars </button>
+      <button href="#" class="btn incommon-tag"> Vintage Cars </button>
+  </div>
+  <div class="buttonDiv">
+    <button class="ctabutton">
+      MESSAGE
+    </button>
+    <button class="ctabutton">
+        VIEW PROFILE
+      </button>
+  </div>
+</div>
+  </section>
+
+    <!--Reviews-->
+    <section class="horizontal-scroll">          
+      <article class="grid-container gig-card">
+        <header class="gig-card-header">
+          <h1 class="gig-card-title">Really lovely to work with</h1>
+          </header>
+        <div class="gig-card-info">
+          <div class="grid-x gig-card-tag-box">
+              <div class="cell large-12 medium-12 small-12">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+          </div>
+          <div class="cell large-12 medium-12 small-12 gig-card-body">
+          <p>
+              Lara came in clutch when we were our original florist had an emergency. Really nice to work with, 
+              and the flowers were a dream!! Would highly recommend...
+              <a href="#">Read More</a>
+          </p>
+          </div>
+        </div>
+        <footer class="grid-x gig-card-footer">
+          <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+              <h1>Jenna M.</h1> 
+              <img src="img/starRating.svg" alt="Star Rating">
+          </div>
+          <div class="cell large-3 medium-3 small-3 gig-card-img">
+              <img src="img/hana.svg" alt="Profile Image">
+          </div>
+        </footer>
+      </article>
+      <article class="grid-container gig-card">
+        <header class="gig-card-header">
+          <h1 class="gig-card-title">Really lovely to work with</h1>
+          </header>
+        <div class="gig-card-info">
+          <div class="grid-x gig-card-tag-box">
+              <div class="cell large-12 medium-12 small-12">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+          </div>
+          <div class="cell large-12 medium-12 small-12 gig-card-body">
+          <p>
+              Lara came in clutch when we were our original florist had an emergency. Really nice to work with, 
+              and the flowers were a dream!! Would highly recommend...
+              <a href="#">Read More</a>
+          </p>
+          </div>
+        </div>
+        <footer class="grid-x gig-card-footer">
+          <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+              <h1>Jenna M.</h1> 
+              <img src="img/starRating.svg" alt="Star Rating">
+          </div>
+          <div class="cell large-3 medium-3 small-3 gig-card-img">
+              <img src="img/hana.svg" alt="Profile Image">
+          </div>
+        </footer>
+      </article>
+      <article class="grid-container gig-card">
+        <header class="gig-card-header">
+          <h1 class="gig-card-title">Really lovely to work with</h1>
+          </header>
+        <div class="gig-card-info">
+          <div class="grid-x gig-card-tag-box">
+              <div class="cell large-12 medium-12 small-12">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+          </div>
+          <div class="cell large-12 medium-12 small-12 gig-card-body">
+          <p>
+              Lara came in clutch when we were our original florist had an emergency. Really nice to work with, 
+              and the flowers were a dream!! Would highly recommend...
+              <a href="#">Read More</a>
+          </p>
+          </div>
+        </div>
+        <footer class="grid-x gig-card-footer">
+          <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+              <h1>Jenna M.</h1> 
+              <img src="img/starRating.svg" alt="Star Rating">
+          </div>
+          <div class="cell large-3 medium-3 small-3 gig-card-img">
+              <img src="img/hana.svg" alt="Profile Image">
+          </div>
+        </footer>
+      </article>
+      <article class="grid-container gig-card">
+        <header class="gig-card-header">
+          <h1 class="gig-card-title">Really lovely to work with</h1>
+          </header>
+        <div class="gig-card-info">
+          <div class="grid-x gig-card-tag-box">
+              <div class="cell large-12 medium-12 small-12">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+          </div>
+          <div class="cell large-12 medium-12 small-12 gig-card-body">
+          <p>
+              Lara came in clutch when we were our original florist had an emergency. Really nice to work with, 
+              and the flowers were a dream!! Would highly recommend...
+              <a href="#">Read More</a>
+          </p>
+          </div>
+        </div>
+        <footer class="grid-x gig-card-footer">
+          <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+              <h1>Jenna M.</h1> 
+              <img src="img/starRating.svg" alt="Star Rating">
+          </div>
+          <div class="cell large-3 medium-3 small-3 gig-card-img">
+              <img src="img/hana.svg" alt="Profile Image">
+          </div>
+        </footer>
+      </article>
+      <article class="grid-container gig-card">
+        <header class="gig-card-header">
+          <h1 class="gig-card-title">Really lovely to work with</h1>
+          </header>
+        <div class="gig-card-info">
+          <div class="grid-x gig-card-tag-box">
+              <div class="cell large-12 medium-12 small-12">
+                <button href="#" class="btn gig-card-tag"> Photography </button>
+                <button href="#" class="btn gig-card-tag"> Flowers </button>
+            </div>
+          </div>
+          <div class="cell large-12 medium-12 small-12 gig-card-body">
+          <p>
+              Lara came in clutch when we were our original florist had an emergency. Really nice to work with, 
+              and the flowers were a dream!! Would highly recommend...
+              <a href="#">Read More</a>
+          </p>
+          </div>
+        </div>
+        <footer class="grid-x gig-card-footer">
+          <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+              <h1>Jenna M.</h1> 
+              <img src="img/starRating.svg" alt="Star Rating">
+          </div>
+          <div class="cell large-3 medium-3 small-3 gig-card-img">
+              <img src="img/hana.svg" alt="Profile Image">
+          </div>
+        </footer>
+      </article>
+    </section>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="grid-container">
+    <div class="grid-x">
+    <div class="cell small-6 medium-6 large-6">
+  
+      <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="linkhere.html">Contact Us</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

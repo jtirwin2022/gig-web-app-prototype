@@ -1,0 +1,300 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigeon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+<body>
+
+  <!-- Our Header & Nav bar :~) --->
+  <header class="topnav" id="myTopnav">
+    <a href="index.html" class="Navimg"><img src="img/gigLogoMediumWhite.svg" alt="Gig Logo"></a>
+      <input type="text" placeholder="Search.." name="search">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+      <a href="index.html" class="active nav-text nav-home"> Home </a>
+      <a href="find_a_gig.html" class="nav-text"> Find a Gig </a>
+      <a href="profile.html" class="nav-text"> Profile </a>
+      <a href="faq.html" class="nav-text"> FAQ </a>
+      <a href="dashboard.html" id="nav-dashboard" class="nav-text"> Dashboard </a> 
+  </header>
+
+      <div class="grid-container profile-body">
+      <div class="grid-x grid-padding-x">
+
+        <!-- Profile Header and Bookmark -->
+        <div class="large-12 medium-12 small-12 profile-header">
+          <h1>Profile</h1>
+          <!--- Bookmark button --->
+          <img class="bookmark" src="img/bookmarkBlack.png" alt="Bookmark Profile">
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+
+        <!--- Left side Profile stuff--->
+        <div class="large-4 cell">
+          
+          <!--Profile Card Large -->
+
+          <div class="grid-x profile-card profile-card-large">
+            <div class="cell large-5 medium-5 small-5 profile-card-photo">
+             <img id="profile-img" src="img/paulCircleBorder.svg" alt="Paul Profile Pic">
+            </div>
+            <div class="cell large-7 medium-7 small-7 callout-text">
+              <div class="profile-card-heading">
+              <h1>Paul Pickie</h1>
+              <p style="margin: -5px 0 5px; color: #979797">@ppaul</p>
+              <p style="margin-bottom: 5px;">Vintage guy runs a vintage car dealership. Ask me about my 1967 Chevy Corvette. </p>
+              </div>
+              <div class="cell large-12 profile-card-buttons">
+              <!--- Profile function buttons--->
+              <button class="ctabutton-p">
+                MESSAGE
+              </button>
+              <a href="#" id="btn-modal"class=""> <img src="img/infoButton.svg"> </a>
+            </div>
+          </div>            
+         </div>
+
+       
+          <!--Modal Sheet for Mobile-->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1> Posted Gigs </h1>
+              <div class="callout grid-x modal-item">
+                <div class="cell large-12 medium-12 small-12 callout-text">
+                 <div class="callout-text-heading">
+                   <h1>Paul Pickie</h1>
+                   <p>2 km away</p>
+                 </div> 
+                 <div class="cell large-12 medium-12 small-12 callout-text-info">
+                   <h2>Need new website for vintage car spot.</h2>
+                   <div class="callout-tags">
+                   <p>Design</p>
+                   <p>Notion</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+              <div class="modal-item">
+                  <h1>In Common</h1>
+                  <button href="#" class="btn incommon-tag"> Cars </button>
+                  <button href="#" class="btn incommon-tag"> Vintage Cars </button>
+              </div>
+              <div class="callout-tags modal-item">
+                <h1>Skilled At</h1>
+                <p>Designing</p>
+                <p>Web Designing</p>
+                <p>Designer</p>
+                <p>Branding</p>
+                <p>Graphic Design</p>
+              </div>
+              <div class="callout-tags modal-item">
+                <h1>Interested In</h1>
+                <p>Design</p>
+                <p>Notion</p>
+              </div>
+            </div>
+          </div>
+
+          <!--- Skill Tags as Buttons--->
+          <div class="profile-skills">
+            <h2> Filter by Tags </h2>
+              <div id="myBtnContainer">
+                <button class="btn active show-all" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn skills-tag" onclick="filterSelection('carMechanics')"> Car Mechanics</button>
+                <button class="btn skills-tag" onclick="filterSelection('carAppraisals')"> Car Appraisals</button>
+                <button class="btn skills-tag" onclick="filterSelection('photography')"> Photography</button>
+              </div>
+          </div>
+
+          <div class="profile-modal-large">
+          <!--- Interest Tags as Buttons--->
+          <div class="profile-interest-tags">
+            <h2> Interests </h2>
+              <button class="btn skills-tag"> Refurbished Cars </button>
+              <button class="btn skills-tag"> Cars </button>
+              <button class="btn skills-tag"> Vintage Cars </button>
+              <button class="btn skills-tag"> Camping </button>
+          </div>
+          <!--- Pricing Slider--->
+          <h2> Pricing </h2>
+            <div class="slider" data-slider data-initial-start="50" data-end="200">
+              <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+              <span class="slider-fill" data-slider-fill></span>
+              <input type="hidden">
+            </div>
+
+          <!--- Gigs Posted--->
+          <h2> Posted Gigs </h2>
+            <div class="callout grid-x">
+              <div class="cell large-12 callout-text">
+                <div class="callout-text-heading">
+                  <h1>Paul Pickie</h1>
+                  <p>2 km away</p>
+                </div> 
+                <div class="cell large-12 callout-text-info">
+                  <h2>Need new website for vintage car spot.</h2>
+                  <div class="callout-tags">
+                  <p>Design</p>
+                  <p>Notion</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--- Reviews Large--->
+
+          <div class="profile-reviews-large">
+          <h2> Reviews </h2>               
+          <article class="grid-container gig-card-p">
+            <header class="gig-card-header">
+              <h1 class="gig-card-title">Really lovely to work with</h1>
+              </header>
+            <div class="gig-card-info">
+              <div class="grid-x gig-card-tag-box">
+                  <div class="cell large-12 medium-12 small-12">
+                    <button href="#" class="btn gig-card-tag"> Photography </button>
+                    <button href="#" class="btn gig-card-tag"> Flowers </button>
+                </div>
+              </div>
+              <div class="cell large-12 medium-12 small-12 gig-card-body">
+              <p>
+                  Lara came in clutch when we were our original florist had an emergency. Really nice to work with, 
+                  and the flowers were a dream!! Would highly recommend...
+                  <a href="#">Read More</a>
+              </p>
+              </div>
+            </div>
+            <footer class="grid-x gig-card-footer">
+              <div class="cell large-9 medium-9 small-9 gig-card-tag-box">
+                  <h1>Jenna M.</h1> 
+                  <img src="img/starRating.svg" alt="Star Rating">
+              </div>
+              <div class="cell large-3 medium-3 small-3 gig-card-img">
+                  <img src="img/hana.svg" alt="Profile Image">
+              </div>
+            </footer>
+          </article>
+          <div class="rmr">
+            <a id="rmr" href="#">Read More Reviews</a>
+          </div>
+          </div>
+        </div>
+          
+          
+        
+
+        <!--- Middle Gallery stuff--->
+        <div class="cell large-6 medium-12 small-12">
+
+          <!--- Profile Gallery--->
+          <div class="profile-gallery container">
+            <img class="filterDiv carMechanics" src="img/portfolio/blueCar.png" alt="Blue Car">
+            <img class="filterDiv carMechanics" src="img/portfolio/blackCar.png" alt="Black Car">
+            <img class="filterDiv carMechanics" src="img/portfolio/greyCar.png" alt="Grey Car">
+            <img class="filterDiv carMechanics" src="img/portfolio/greenCar.png" alt="Green Car">
+            <img class="filterDiv carMechanics" src="img/portfolio/tire.png" alt="Car Tire">
+            <img class="filterDiv carAppraisals" src="img/portfolio/bmw.png" alt="Inside BMW">
+            <img class="filterDiv carAppraisals" src="img/portfolio/alpha.png" alt="Inside Alpha Romeo">
+            <img class="filterDiv carAppraisals" src="img/portfolio/honda.png" alt="Inside Honda">
+            <img class="filterDiv photography" src="img/portfolio/road1.png" alt="Scenic Drive">
+            <img class="filterDiv photography" src="img/portfolio/road2.png" alt="Scenic Drive">
+            <img class="filterDiv photography" src="img/portfolio/road3.png" alt="Scenic Drive">
+            <img class="filterDiv photography" src="img/portfolio/road4.png" alt="Scenic Drive">
+          </div>
+
+          <div class="profile-incommon-medsmall">
+            <h1>In Common</h1>
+            <button href="#" class="btn incommon-tag"> Cars </button>
+            <button href="#" class="btn incommon-tag"> Vintage Cars </button>
+          </div>
+
+          <!--- Profile CTA Large--->
+          <div class="profile-cta-large grid-x">
+            <div class="cell large-12 medium-12 small-12 profile-cta-text">
+              <h2>Let's work together</h2>
+              <p> Wanna work on something together? Always down to grab a coffee. </p>
+            </div>
+            <!--- Contact function buttons--->
+            <div class="cell large-12 profile-cta-buttons">
+              <button class="ctabutton-p">
+                GET A QUOTE
+              </button>
+              <a href="#" class=""> <img src="img/getCoffeeButton.png"> </a>
+            </div>
+          </div>
+
+          <!--- Reviews Medium Small --->
+          <div class="profile-reviews-medsmall">
+            <h2> Reviews </h2>
+              <div class="review-card-frame">
+                <article class="grid-container small-gig-card">          
+                  <header class="small-gig-card-header">
+                    <h1 class="small-gig-card-title">Really lovely to work with</h1>
+                    </header>
+                  <div class="small-gig-card-info ">
+                    <img src="img/starRating.svg" alt="Star Rating">
+                  </div>
+                  <footer class="grid-x small-gig-card-footer">
+                    <div class="cell large-9 medium-9 small-9 gig-card-tag-box">      
+                      <button href="#" class="btn gig-card-tag"> Photography </button>
+                      <button href="#" class="btn gig-card-tag"> Flowers </button>
+                    </div>                  
+                    <div class="cell large-3 medium-3 small-3 gig-card-img">
+                      <img src="img/hana.svg" alt="Profile Image">                  
+                    </div>
+                  </footer>         
+                </article>
+              <div class="grid container small-gig-card-lip"></div>    
+            </div>
+          </div>
+        </div>
+        
+
+        <!--- Right side Search Filter--->
+        <div class="cell large-2 profile-search-filters">
+
+          <!--- Search Filters --->
+          <h2> Search Filters <h2>
+            <button href="#" class="btn search-tag"> Cars </button>
+            <button href="#" class="btn search-tag"> Vintage </button>
+            <button href="#" class="btn search-tag"> Refurbished </button>
+        </div>
+      </div>          
+    </div>
+
+    <!--Footer-->
+    <footer class="site-footer">
+      <div class="grid-container">
+      <div class="grid-x">
+      <div class="cell small-6 medium-6 large-6">
+    
+        <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="linkhere.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
