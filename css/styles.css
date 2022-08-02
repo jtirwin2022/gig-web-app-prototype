@@ -1,0 +1,391 @@
+@import 'foundation.css';
+
+@include foundation-xy-grid-classes(
+  /* options
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: true,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: true,
+  $frame-grid: true
+  */
+);
+
+
+
+body {
+  background-color: #FFFCF8;
+}
+
+
+/* nav bar */
+.topnav {
+  background-color: #211d1d;
+  overflow: hidden;
+}
+h1{
+  font-size: 42px;
+  font-weight: bold;
+  font-family: rubik, sans-serif;
+  color: #036C8E;
+  margin: 20px;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: bold;
+  font-family: rubik, sans-serif;
+  color: #414141;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: rubik, sans-serif;
+  color: #414141;
+}
+
+h4{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: rubik, sans-serif;
+  color: #414141;
+}
+
+p{
+  font-size: 18px;
+  font-weight: regular;
+  font-family: rubik, sans-serif;
+}
+/* Nav */
+.topnav {
+  background-color: #211d1d;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fffcf8;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-text {
+  padding: 12px 10px;
+  margin: 14px 0 10px;
+}
+
+#nav-dashboard {
+  float: right;
+}
+
+
+.topnav a:hover {
+  background-color: #65aea0;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #036c8e;
+  color: #fffcf8;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav .nav-home {
+  display: none;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin: 18px 10px 0;
+  font-size: 17px;
+  width: 200px;
+}
+
+
+@media screen and (max-width: 790px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+    font-size: 28px;
+    color: #fffcf8;
+    margin: 15.5px 8px;
+    padding: 0 8px;
+
+  }
+  #nav-dashboard {
+    float: left;
+  }
+
+ }
+
+@media screen and (max-width: 790px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a.nav-text {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a.nav-home {
+    margin-top: 73px;
+  }
+
+}
+
+.Navimg {
+  
+  width: 120px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* download our app css */
+
+.OurAppText {
+  justify-content: center;
+  align-items: center;
+ 
+  
+
+}
+.img {
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-wrap: break-word;
+  min-width: 150px !important;
+
+}
+
+.button {
+  background-color: #036C8E;
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-self: stretch;
+}
+
+.BlueButton {
+  background-color: #036C8E;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  
+}
+
+/*jobs you may like container */
+
+.GigsYouMay { 
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Index Gallery */
+
+.GigOuterCard {
+ display: grid;
+ justify-content: center;
+ padding: 5px;
+}
+
+.gallery {
+ display: grid;
+ border-radius: 25px;
+ filter: drop-shadow(0 0 0.75rem black);
+ justify-content: center;
+}
+
+.gallery:hover   {
+  border-bottom: 5px;
+}
+
+.gallery img {
+  margin-top: 1em;
+  display: grid;
+ width: 100%;
+ height: auto;
+ border-radius: 25px;
+ justify-content: center;
+ 
+}
+
+.responsive .GigOuterCard{
+ width: 24.99999%;
+}
+
+.NoX {
+  width: auto;
+  float: left;
+}
+
+/* How Gig Works */
+
+.HowGig {
+ display: grid;
+ justify-content: center;
+ align-self: center;
+}
+
+/* footer */
+
+.site-footer
+{
+  background-color:#036C8E;
+  
+  font-size:15px;
+  line-height:24px;
+  color: white;
+  margin-top: 20px;
+  
+
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:white;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:20px;
+  text-align:center;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.site-footer hr
+{
+  border-top-color:#bbbbbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#ffffff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  
+}
+.site-footer a
+{
+  color:#737373;
+}
+.footer-links a
+{
+  color:white;
+  padding-left: 5px;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links.inline li .social-icons
+{
+  display:inline-block
+}
+.social-icons
+{
+  list-style:none;
+  float: left;  
+}
+
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  border-radius:100%;
+ 
+}
+.copyright-text
+{
+
+  font-size: 12pt;
+}
+
+
+}
+.social-icons li.title
+{
+ 
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons.size-sm a
+{
+ 
+  height:20px;
+  width:20px;
+  font-size:14px
+}
+
+@media screen and (max-width:400px) {  .img
+   {
+    display: none;
+  }
+}
+
+
+
+  

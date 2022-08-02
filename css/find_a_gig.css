@@ -1,0 +1,259 @@
+h1 {
+  text-align: center;
+}
+
+.intro-container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*Search Button*/
+.button {
+    background-color: #036C8E;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.search-container {
+  display: inline-block;
+  text-align: center;
+ 
+}
+
+/*Tags Interest and Skill*/
+
+.tag-cloud-section {
+  padding: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 25px;
+  border: 2px solid #FFFCF8;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+}
+
+.tag-cloud-title {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid #cacaca;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.tag-cloud {
+  margin: 1rem;
+  text-align: center;
+  list-style: none;
+}
+
+.tag-cloud .tag-cloud-individual-tag {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
+  border-radius: 5000px;
+  background: #036C8E;
+  display: inline-block;
+  margin: 3px;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.tag-cloud .tag-cloud-add-tag {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
+  border-radius: 5000px;
+  background: white;
+  display: inline-block;
+  margin: 3px;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.tag-cloud .tag-cloud-individual-tag .fa {
+  margin-left: 7px;
+}
+
+.tag-cloud .tag-cloud-individual-tag:hover {
+  background: #FDAC6B;
+  transition: background-color .2s ease-in;
+}
+
+.tag-cloud .tag-cloud-add-tag:hover {
+  background: #FDAC6B;
+  transition: background-color .2s ease-in;
+}
+
+/* search bar */
+.form {
+  display: flex;
+  flex-direction: row;
+}
+.search-field {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 250;
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  filter: drop-shadow(0 0 0.75rem black);
+
+  
+}
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+.search-button img {   
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+
+.SearchBar {
+  max-width: 500px;
+  margin: 0 auto;
+ 
+}
+
+/*Sliders*/
+
+.slidecontainer {
+  width: 100%;
+}
+
+.width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.width a {
+  margin: 0 auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #FDAC6B;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #036C8E;
+  cursor: pointer;
+}
+
+.multislide-container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*Large Title*/
+
+
+.pageheader h1 {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*Section Title*/
+.pagesection h1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: right;
+  float: center;
+}
+
+/*Section Subheading*/
+.pagesection h2 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.tag-cloud ul li {
+  background-color: #036C8E;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1PX;
+  border-radius: 20px;
+  color: white;
+  text-align: center;  
+  display: inline-block;
+  margin: 4px 2px;
+  position: relative;
+  width:25%; 
+  min-width: 180px;
+}
+
+.tag-cloud ul li:hover {
+  background-color: #FDAC6B;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+
